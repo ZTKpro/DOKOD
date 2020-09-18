@@ -5,21 +5,26 @@ import styled from "styled-components"
 import Logo from "../assets/logo.png"
 
 const NavWrapper = styled.nav`
-  padding: 15px 135px;
   height: 60px;
   width: 100%;
   box-shadow: 0px 3px 6px #00000029;
   position: fixed;
   top: 0;
   left: 0%;
+
+  background-color: white;
+`
+const NavContent = styled.div`
+  margin: 0 auto;
+  height: 100%;
+  width: 1300px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: white;
 `
 
 const LogoImg = styled.img`
-  height: 100%;
+  height: 75%;
   width: auto;
   margin-right: 15px;
 `
@@ -54,33 +59,20 @@ const NavItemWrapper = styled.div`
 class Nav extends React.Component {
   render() {
     return (
-      <NavWrapper className="nav">
-        {/* <div className="g-container nav__container">
-          <Link className="nav__Link" to="/"> */}
-        <LogoWrapper>
-          <LogoImg src={Logo}></LogoImg>
-          {/* </Link>
+      <NavWrapper>
+        <NavContent>
+          <LogoWrapper>
+            <LogoImg src={Logo}></LogoImg>
 
-          <div
-            onClick={() => {
-              console.log("otwórz nav")
-            }}
-            className="nav__collapse"
-          >
-            <div className="nav__collapseItem"></div>
-            <div className="nav__collapseItem"></div>
-            <div className="nav__collapseItem"></div>
-          </div> */}
-          {/* <NavScroll /> */}
-          {/* </div> */}
-          <p>DOKOD</p>
-        </LogoWrapper>
-        <NavItemWrapper>
-          <p>Oferta</p>
-          <p>Aplikacja</p>
-          <p>Zaloguj się</p>
-          <p>Wyloguj się</p>
-        </NavItemWrapper>
+            <p>DOKOD</p>
+          </LogoWrapper>
+          <NavItemWrapper>
+            <p>Oferta</p>
+            <p>Aplikacja</p>
+            <p>Zaloguj się</p>
+            <p>Wyloguj się</p>
+          </NavItemWrapper>
+        </NavContent>
       </NavWrapper>
     )
   }

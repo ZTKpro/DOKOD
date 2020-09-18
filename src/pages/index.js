@@ -5,6 +5,7 @@ import GlobalStyle from "../components/globalStyle"
 import Nav from "../components/nav"
 import Header from "../components/Header"
 import Form from "../components/Form"
+import Ofert from "../components/Ofert"
 import App from "../components/instalApp"
 import Footer from "../components/Footer"
 
@@ -17,6 +18,7 @@ export default function Home() {
       <Nav></Nav>
       <Header></Header>
       <Form></Form>
+      <Ofert></Ofert>
       <App></App>
       <Footer></Footer>
     </div>
