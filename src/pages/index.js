@@ -3,7 +3,7 @@ import React from "react"
 import GlobalStyle from "../components/globalStyle"
 
 import Nav from "../components/nav"
-import Header from "../components/Header"
+import Header from "../components/header"
 import Form from "../components/Form"
 import Ofert from "../components/Ofert"
 import App from "../components/instalApp"
