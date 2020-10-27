@@ -18,13 +18,34 @@ const HeaderWrapper = styled.section`
   background-size: cover;
   h2 {
     color: white;
-    font-size: 40px;
+    font-size: 35px;
+  }
+  @media (max-width: 801px) {
+    h2 {
+      font-size: 24px;
+    }
+  }
+  @media (max-width: 501px) {
+    h2 {
+      font-size: 18px;
+    }
+  }
+  @media (max-width: 401px) {
+    h2 {
+      font-size: 16px;
+    }
   }
 `
 
 const Pin = styled.img`
   height: 200px;
   width: auto;
+  @media (max-width: 801px) {
+    height: 180px;
+  }
+  @media (max-width: 501px) {
+    height: 120px;
+  }
 `
 
 class Header extends React.Component {

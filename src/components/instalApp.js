@@ -8,16 +8,39 @@ import AppleShopImg from "../assets/AppleShop.png"
 
 const AppWrapper = styled.section`
   margin: 0 auto;
-  margin-top: 50px;
+  margin-top: 150px;
   height: max-content;
-  width: 1300px;
+  width: 1200px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  @media (max-width: 1200px) {
+    width: 800px;
+  }
+  @media (max-width: 801px) {
+    flex-direction: column;
+    justify-content: center;
+    width: 500px;
+  }
+  @media (max-width: 401px) {
+    flex-direction: column;
+    justify-content: center;
+    width: 300px;
+  }
 `
 const Telephone = styled.img`
-  height: 1000px;
+  height: 880px;
   width: auto;
+  @media (max-width: 1200px) {
+    height: 650px;
+    margin: 0 auto;
+  }
+  @media (max-width: 401px) {
+    height: 500px;
+    margin: 0 auto;
+    margin-right: -5px;
+  }
 `
 const TextWrapper = styled.div`
   width: 50%;
@@ -25,25 +48,48 @@ const TextWrapper = styled.div`
   h3 {
     margin: 0;
     padding: 0;
-    font-size: 63px;
+    font-size: 55px;
     text-align: left;
     color: #ff0707;
   }
   h4 {
     margin: 0;
     padding: 0;
-    font-size: 43px;
+    font-size: 38px;
     text-align: left;
     font-weight: 400;
     color: #ff0707;
+  }
+  @media (max-width: 1200px) {
+    h3 {
+      font-size: 40px;
+    }
+    h4 {
+      font-size: 32px;
+    }
+  }
+  @media (max-width: 801px) {
+    h4,
+    h3 {
+      text-align: center;
+    }
+  }
+  @media (max-width: 401px) {
+    h3 {
+      font-size: 30px;
+    }
+    h4 {
+      font-size: 22px;
+    }
   }
 `
 
 const WhyUseWrapper = styled.div`
   margin: 25px;
   margin-left: 50px;
+
   h5 {
-    font-size: 30px;
+    font-size: 25px;
     margin: 0;
     padding: 0;
     color: #000000b0;
@@ -52,7 +98,27 @@ const WhyUseWrapper = styled.div`
     margin: 0;
     padding: 0;
     color: #000000b0;
-    font-size: 22px;
+    font-size: 20px;
+  }
+  @media (max-width: 1200px) {
+    h5 {
+      font-size: 20px;
+    }
+  }
+  @media (max-width: 801px) {
+    margin-left: 0;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 35px;
+  }
+  @media (max-width: 401px) {
+    margin: 0 auto;
+    h5 {
+      font-size: 18px;
+    }
+    p {
+      font-size: 16px;
+    }
   }
 `
 
@@ -60,17 +126,32 @@ const BtnWrapper = styled.div`
   margin-top: 50px;
   display: flex;
   align-items: center;
+  justify-content: center;
 `
 
 const AppleShop = styled.img`
-  height: 100px;
+  height: 90px;
   width: auto;
   margin-right: 20px;
+
+  @media (max-width: 1200px) {
+    height: 60px;
+  }
+  @media (max-width: 401px) {
+    height: 45px;
+  }
 `
 
 const AndroidShop = styled.img`
-  height: 100px;
+  height: 90px;
   width: auto;
+
+  @media (max-width: 1200px) {
+    height: 60px;
+  }
+  @media (max-width: 401px) {
+    height: 45px;
+  }
 `
 
 const whyUseApp = [
